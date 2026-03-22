@@ -193,7 +193,7 @@ html,body{width:100%;height:100%;overflow:hidden;font-family:'Cairo',sans-serif;
 <script>
 for(var i=0;i<55;i++){var s=document.createElement('div');s.className='star';var sz=1+Math.random()*2.5;s.style.cssText='width:'+sz+'px;height:'+sz+'px;left:'+(Math.random()*100)+'%;top:'+(Math.random()*100)+'%;--d:'+(2+Math.random()*3)+'s;--dl:'+(Math.random()*4)+'s;';document.getElementById('stars').appendChild(s);}
 
-var ANSWER='رفيدة'.split('');
+var ANSWER='ابوبكر'.split('');
 var players=[],pStates=[],timerIv=null,secs=60,active=false,won=false;
 
 function initGame(){
@@ -246,8 +246,8 @@ function buildGame(){
   players.forEach(function(n,i){rankRows+='<div class="rank-row"><div class="rank-pos">'+(i+1)+'</div><div class="rank-name">'+n+'</div><div class="rank-bar-bg"><div class="rank-bar-fill" id="rb'+i+'" style="width:0%"></div></div></div>';});
   ac.innerHTML='<div class="admin-badge">👁 المشرف</div>'
     +'<div><div class="timer-big" id="tNum">60</div><div class="timer-bar-bg"><div class="timer-bar" id="tBar"></div></div></div>'
-    +'<div class="admin-q"><div class="admin-q-lbl">❓ السؤال</div><div class="admin-q-txt">أول ممرضة جراحية في الإسلام؟</div></div>'
-    +'<div class="admin-ans-box"><div class="admin-ans-lbl">✅ الإجابة</div><div class="admin-ans-val">رفيدة</div></div>'
+    +'<div class="admin-q"><div class="admin-q-lbl">❓ السؤال</div><div class="admin-q-txt">أول من أسلم من الرجال؟</div></div>'
+    +'<div class="admin-ans-box"><div class="admin-ans-lbl">✅ الإجابة</div><div class="admin-ans-val">ابوبكر</div></div>'
     +'<div class="admin-ranking"><div class="rank-lbl">📊 التقدم</div>'+rankRows+'</div>';
   grid.appendChild(ac);
 
